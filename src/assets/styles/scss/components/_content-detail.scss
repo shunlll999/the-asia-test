@@ -1,0 +1,38 @@
+.content-detail {
+  @include content-container;
+
+  // position: relative;
+
+  &.country {
+    color: $selector-color;
+  }
+
+  &__book {
+    position: fixed;
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    right: 20px;
+    top: 400px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    background-image: linear-gradient(120deg,#70daa3,#26a48a);
+    color: #fff;
+    line-height: 30px;
+
+    &--title {
+      padding-top: 2rem;
+      font-size: 20px;
+      font-weight: 300px;
+    }
+    
+    &--prices {
+      font-size: 15px;
+
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+}

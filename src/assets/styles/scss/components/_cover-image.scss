@@ -1,3 +1,35 @@
 .cover-image {
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  width: 100%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+
+  &__holder {
+    width: 100%;
+    height: 600px;
+    clear: both;
+    position: relative;
+    transition: top 2s;
+    z-index: -2;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 0;
+    top: 450px;
+    z-index: -1;
+    width: 100%;
+    height: 120%;
+    background: #fff;
+    clip-path: polygon(0 6%, 100% 0, 100% 93%, 0% 100%);
+  }
 }
